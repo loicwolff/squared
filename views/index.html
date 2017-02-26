@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Squared</title>
+    <meta name="description" content="A gomix app to square things">
+    <link id="favicon" rel="icon" href="https://gomix.com/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Squared
+      </h1>
+    </header>
+
+    <main>
+      <p class="bold">Oh hi,</p>
+      <p>Send me your images, I'll square them!</p>
+      
+      <form ref="uploadForm" id="uploadForm"  action="/upload" method="post" enctype="multipart/form-data">
+        
+        
+        <div >
+          <input name="image" type="file" />
+        </div>
+        
+        <!--<div id="color-choser">
+          
+          <label for="white" class="color">
+            <input type="radio" name="color" value="white" id="white" checked>
+            <span>Blanc</span>
+          </label>
+
+          <label for="black" class="color">
+            <input type="radio" name="color" value="black" id="black">
+            <span>Noir</span>
+          </label>
+        </div>
+               -->      
+          <div class="submit">
+            <button type="submit">Submit</button>  
+          </div>
+        
+      </form>
+      
+    </main>
+
+    <footer>
+      <div>
+        Built with <a href="https://github.com/EyalAr/lwip">lwip</a> & <a href="github.com/richardgirges/express-fileupload">express-fileupload</a>
+      </div>
+      
+      <div>
+        <a href="https://gomix.com">
+          Remix this in Gomix
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
