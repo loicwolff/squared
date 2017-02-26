@@ -10,7 +10,19 @@
 
 body {
   font-family: helvetica, arial, sans-serif;
-  margin: 25px;
+  padding: 25px;
+
+}
+
+main {
+  background-color: #7DB6E5;
+  padding-left: 10px;
+  margin-bottom: 25px;
+  padding: 25px;
+  display: inline-block;
+  width: 100%;
+  max-width: 340px;
+  border-radius: 3px;
 }
 
 h1 {
@@ -27,13 +39,6 @@ p {
 }
 
 form {
-  margin-bottom: 25px;
-  padding: 15px;
-  background-color: cyan;
-  display: inline-block;
-  width: 100%;
-  max-width: 340px;
-  border-radius: 3px;
 }
 
 input {
@@ -53,7 +58,7 @@ button {
   border: 1px solid grey;
   box-shadow: 2px 2px teal;
   cursor: pointer;
-  float: right;
+  float: left;
 }
 
 button:hover {
@@ -82,34 +87,38 @@ footer > a {
   text-decoration: line-through;
 }
 
+#color-choser {
+  clear: both;
+  margin-top: 20px;
+}
+
+#color-choser > span {
+  margin-right: 15px;
+}
+
 #color-choser .color {
-  float: left;
+  display: inline-block;
 }
 
 #color-choser .color span {
   padding: 5px 10px 5px 10px;
-  border-bottom: 1px solid;
-  border-top: 1px solid;
+  border: 1px solid black;
   display: block;
-}
-
-#color-choser .color span :first {
-  border-left: 1px solid;
 }
 
 #color-choser .color input[type="radio"] {
   display: none;
 }
 
-
-#color-choser input[type="radio"] + span {
+#color-choser .color input[type="radio"] + span {
   background-color: #FFFFFFF;
 }
 
-#color-choser input[type="radio"]:checked + span {
-  background-color: #CCCCCC;
+#color-choser .color input[type="radio"]:checked + span {
+  background-color: #1860AB;
+  color: white;
 }
 
 #color-choser .submit {
-  clear: both;
+  float: right;
 }
