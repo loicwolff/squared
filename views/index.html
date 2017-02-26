@@ -17,21 +17,23 @@
     </header>
 
     <main>
-      <p class="bold">Oh hi,</p>
-      <p>Send me your images, I'll square them!</p>
-      
       <form ref="uploadForm" id="uploadForm"  action="/upload" method="post" enctype="multipart/form-data">
-        
-        
         <div >
+          <span>
+            Image
+          </span>
+          
           <input name="image" type="file" />
         </div>
         
-        <!--<div id="color-choser">
+        <div id="color-choser">  
+          <span>
+            Couleur de fond
+          </span>
           
           <label for="white" class="color">
             <input type="radio" name="color" value="white" id="white" checked>
-            <span>Blanc</span>
+            <span>Blanc</span>          
           </label>
 
           <label for="black" class="color">
@@ -39,10 +41,10 @@
             <span>Noir</span>
           </label>
         </div>
-               -->      
-          <div class="submit">
-            <button type="submit">Submit</button>  
-          </div>
+  
+        <div class="submit">
+          <button type="submit">Submit</button>  
+        </div>
         
       </form>
       
