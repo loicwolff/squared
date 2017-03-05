@@ -119,6 +119,25 @@ footer > a {
   color: white;
 }
 
-#color-choser .submit {
+#flipper input[type="checkbox"] {
+  display: none;
+}
+
+
+#flipper input[type="checkbox"] + span {
+  display: inline-block;
+  padding: 5px;
+  margin: 15px 0px 5px 0px;
+  border: 2px solid black;
+}
+
+#flipper input[type="checkbox"]:checked + span {
+  border-color: green;
+  color: green;
+  transform: rotateY(-180deg);
+}
+
+.submit {
   float: right;
 }
+
