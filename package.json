@@ -10,7 +10,6 @@
 		"express": "^4.15.0",
 		"express-fileupload": "^0.1.1",
 		"lwip": "^0.0.9",
-		"image-size": "^0.5.1",
 		"image-type": "^2.1.0"
 	},
 	"engines": {
