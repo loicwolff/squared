@@ -141,3 +141,10 @@ footer > a {
   float: right;
 }
 
+#resizer {
+  margin-top: 10px;
+}
+
+.hidden {
+  display: none;
+}

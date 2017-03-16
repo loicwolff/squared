@@ -18,12 +18,16 @@
 
     <main>
       <form ref="uploadForm" id="uploadForm"  action="/upload" method="post" enctype="multipart/form-data">
-        <div >
+        <div>
           <span>
             Image
           </span>
           
-          <input name="image" type="file" />
+          <input id="image" name="image" type="file" />
+        </div>
+        
+        <div id="image-size" class="hidden">
+            
         </div>
         
         <div id="color-choser">  
@@ -48,6 +52,12 @@
             <span>Inverser image</span>
           </label>
         </div>
+        
+        <div id="resizer" >
+          <label for="newsize">
+            <input type="number" name="newsize" id="newsize" placeholder="Nouvelle taille" />
+          </label>
+        </div>
   
         <div class="submit">
           <button type="submit">Submit</button>  
@@ -59,7 +69,11 @@
 
     <footer>
       <div>
-        Built with <a href="https://github.com/expressjs/express">express</a>, <a href="https://github.com/richardgirges/express-fileupload">express-fileupload</a>, <a href="https://github.com/EyalAr/lwip">lwip</a> & <a href="https://github.com/sindresorhus/image-type">image-type</a>
+        Built with 
+        <a href="https://github.com/expressjs/express">express</a>, 
+        <a href="https://github.com/richardgirges/express-fileupload">express-fileupload</a>,
+        <a href="https://github.com/EyalAr/lwip">lwip</a> & 
+        <a href="https://github.com/sindresorhus/image-type">image-type</a>
       </div>
       
       <div>
@@ -67,6 +81,12 @@
           Remix this in Gomix
         </a>
       </div>
+      
+      <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
     </footer>
   </body>
 </html>
