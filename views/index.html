@@ -30,35 +30,117 @@
             
         </div>
         
-        <div id="color-choser">  
-          <span>
+        <div class="color-choser block">  
+          <h3>
             Couleur de fond
-          </span>
+          </h3>
           
           <label for="white" class="color">
             <input type="radio" name="color" value="white" id="white" checked>
-            <span>Blanc</span>          
+            <span>⚪️ Blanc</span>          
           </label>
 
           <label for="black" class="color">
             <input type="radio" name="color" value="black" id="black">
-            <span>Noir</span>
+            <span>⚫️ Noir</span>
           </label>
         </div>
         
-        <div id="flipper">
-          <label for="flip" >
-            <input type="checkbox" name="flip" id="flip" />
-            <span>Inverser image</span>
-          </label>
+        <div class="block">
+          <h3>
+            Image
+          </h3>
+          
+          <div id="flipper">
+            <label for="flip" >
+              <input type="checkbox" name="flip" id="flip" />
+              <span>↔️ Inverser</span>
+            </label>
+          </div>
+
+          <div id="resizer" >
+            <label for="newsize">
+              <input type="number" name="newsize" id="newsize" placeholder="Redimensionner ?" min="1" />
+            </label>
+          </div>  
         </div>
         
-        <div id="resizer" >
-          <label for="newsize">
-            <input type="number" name="newsize" id="newsize" placeholder="Nouvelle taille" />
-          </label>
+        <div id="tfy" class="block">
+          <h3>
+            Ajouter "Motif Teaforyoubijoux" ?
+          </h3>
+          
+          <div class="color-choser">  
+            <label for="no-text" class="color">
+              <input type="radio" name="textcolor" id="no-text" value="no" checked>
+              <span class="">🚫 Ne pas ajouter</span>
+            </label>
+
+            <label for="text-white" class="color">
+              <input type="radio" name="textcolor" id="text-white" value="white">
+              <span>⚪️ Blanc</span>
+            </label>
+
+            <label for="text-black" class="color">
+              <input type="radio" name="textcolor" id="text-black" value="black">
+              <span>⚫️ Noir</span>
+            </label>
+          </div>
+          
+          <div>
+            <h4>
+              Position
+            </h4>
+
+            <div class="color-choser">  
+              <div>
+                <label for="up-left" class="color">
+                  <input type="radio" name="position" id="up-left" value="up-left" checked>
+                  <span>↖️</span>
+                </label>
+
+                <label for="up-center" class="color">
+                  <input type="radio" name="position" id="up-center"  value="up-center">
+                  <span>⬆️</span>
+                </label>
+
+                <label for="up-right" class="color">
+                  <input type="radio" name="position" id="up-right" value="up-right">
+                  <span>↗️</span>
+                </label>
+              </div>
+
+              <div>
+                <label for="down-left" class="color">
+                  <input type="radio" name="position" id="down-left" value="down-left">
+                  <span>↙️</span>
+                </label>
+
+                <label for="down-center" class="color">
+                  <input type="radio" name="position" id="down-center"  value="down-center">
+                  <span>⬇️</span>
+                </label>
+
+                <label for="down-right" class="color">
+                  <input type="radio" name="position" id="down-right" value="down-right">
+                  <span>↘️</span>
+                </label>
+              </div>
+
+            </div>
+          </div>
+          
+          <div>
+            <h4>
+              Taille police
+            </h4>
+            <div>
+              <input type="number" name="fontsize" id="fontsize" value="30" min="1" />  
+            </div>
+            
+          </div>
         </div>
-  
+        
         <div class="submit">
           <button type="submit">Submit</button>  
         </div>
@@ -72,8 +154,9 @@
         Built with 
         <a href="https://github.com/expressjs/express">express</a>, 
         <a href="https://github.com/richardgirges/express-fileupload">express-fileupload</a>,
-        <a href="https://github.com/EyalAr/lwip">lwip</a> & 
-        <a href="https://github.com/sindresorhus/image-type">image-type</a>
+        <a href="https://github.com/EyalAr/lwip">lwip</a>,
+        <a href="https://github.com/sindresorhus/image-type">image-type</a> &
+        <a href="https://github.com/tkrkt/text2png">text2png</a>
       </div>
       
       <div>
@@ -82,11 +165,11 @@
         </a>
       </div>
       
-      <!-- Your web-app is https, so your scripts need to be too -->
-    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
-            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
-            crossorigin="anonymous"></script>
-    <script src="/client.js"></script>
+      <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+              integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+              crossorigin="anonymous"></script>
+      <script src="/client.js"></script>
+      
     </footer>
   </body>
 </html>

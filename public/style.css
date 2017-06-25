@@ -1,9 +1,3 @@
-/* styles */
-/* called by your view template */
-
-/* You might want to try something fancier: */
-/* less: http://lesscss.org/ */
-
 * {
   box-sizing: border-box;
 }
@@ -11,7 +5,6 @@
 body {
   font-family: helvetica, arial, sans-serif;
   padding: 25px;
-
 }
 
 main {
@@ -21,7 +14,8 @@ main {
   padding: 25px;
   display: inline-block;
   width: 100%;
-  max-width: 340px;
+  height: 100%;
+  max-width: 400px;
   border-radius: 3px;
 }
 
@@ -87,34 +81,33 @@ footer > a {
   text-decoration: line-through;
 }
 
-#color-choser {
-  clear: both;
-  margin-top: 20px;
+.color-choser {
+  
 }
 
-#color-choser > span {
+.color-choser > span {
   margin-right: 15px;
 }
 
-#color-choser .color {
+.color-choser .color {
   display: inline-block;
 }
 
-#color-choser .color span {
+.color-choser .color span {
   padding: 5px 10px 5px 10px;
   border: 1px solid black;
   display: block;
 }
 
-#color-choser .color input[type="radio"] {
+.color-choser .color input[type="radio"] {
   display: none;
 }
 
-#color-choser .color input[type="radio"] + span {
+.color-choser .color input[type="radio"] + span {
   background-color: #FFFFFFF;
 }
 
-#color-choser .color input[type="radio"]:checked + span {
+.color-choser .color input[type="radio"]:checked + span {
   background-color: #1860AB;
   color: white;
 }
@@ -123,11 +116,10 @@ footer > a {
   display: none;
 }
 
-
 #flipper input[type="checkbox"] + span {
   display: inline-block;
   padding: 5px;
-  margin: 15px 0px 5px 0px;
+  margin: 0px 0px 5px 0px;
   border: 2px solid black;
 }
 
@@ -142,9 +134,53 @@ footer > a {
 }
 
 #resizer {
+  float:left;
   margin-top: 10px;
+}
+
+#resizer input {
+  
+}
+
+
+#tfy input[type="checkbox"] + span {
+  display: inline-block;
+  padding: 5px;
+  margin: 15px 0px 5px 0px;
+  border: 2px solid black;
+}
+
+#tfy input[type="checkbox"]:checked + span {
+  border-color: green;
+  color: white;
+  background-color: green;
+}
+
+#tfy input[type="checkbox"] + div {
+  display: none;
+}
+
+#tfy input[type="checkbox"]:checked + div {
+  display: block;
+}
+
+#tfy .color-choser div {
+  padding-bottom: 5px;
+}
+
+.strike {
+  text-decoration: line-through;
 }
 
 .hidden {
   display: none;
+}
+
+h4, h3 {
+  margin: 5px;
+}
+
+.block {
+  clear: both;
+  margin-top: 20px;
 }
